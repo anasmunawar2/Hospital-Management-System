@@ -131,7 +131,29 @@ const RegisterForm = ({ user }: { user: User }) => {
           />
         </div>
 
-        <div className="flex flex-col gap-6 xl:flex-row"></div>
+        {/* <section className="space-y-6">
+          <div className="mb-9 space-y-1">
+            <h2 className="sub-header">Medical Information</h2>
+          </div>
+        </section> */}
+
+        <div className="flex flex-col gap-6 xl:flex-row">
+          <CustomFormField
+            control={form.control}
+            fieldType={FormFieldType.INPUT}
+            name="address"
+            label="Address"
+            placeholder="14th Street Pizza"
+          />
+
+          <CustomFormField
+            control={form.control}
+            fieldType={FormFieldType.INPUT}
+            name="occupation"
+            label="Occupation"
+            placeholder="Software Developer"
+          />
+        </div>
 
         <div className="flex flex-col gap-6 xl:flex-row"></div>
 
